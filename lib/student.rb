@@ -13,8 +13,6 @@ class Student
     students_array.each do |student|
       binding.pry
       new_student = Student.new{student}
-
-      @@all << new_student
     end
   end
 
