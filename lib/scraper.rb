@@ -27,6 +27,7 @@ class Scraper
         scraped_profile[:linkedin] = link_string
       elsif link_string.include?("github")
         scraped_profile[:github] = link_string
+      end
       binding.pry
     end
     # scraped_profile = {:twitter => doc.css(".social-icon-container a")[0]['href'],
