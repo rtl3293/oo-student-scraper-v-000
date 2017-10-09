@@ -36,7 +36,7 @@ class Scraper
     # scraped_profile = {:twitter => doc.css(".social-icon-container a")[0]['href'],
     # :linkedin => doc.css(".social-icon-container a")[1]['href'],
     # :github => doc.css(".social-icon-container a")[2]['href'],}
-    binding.pry
+    #binding.pry
     scraped_profile
   end
 
