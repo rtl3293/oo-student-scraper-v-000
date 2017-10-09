@@ -28,7 +28,6 @@ class Scraper
       elsif link_string.include?("github")
         scraped_profile[:github] = link_string
       end
-      binding.pry
     end
     # scraped_profile = {:twitter => doc.css(".social-icon-container a")[0]['href'],
     # :linkedin => doc.css(".social-icon-container a")[1]['href'],
@@ -36,7 +35,7 @@ class Scraper
     # :blog => doc.css(".social-icon-container a")[3]['href'],
     # :profile_quote => doc.css(".profile-quote").text,
     # :bio => doc.css(".bio-block p").text}
-    #binding.pry
+    binding.pry
     scraped_profile
   end
 
