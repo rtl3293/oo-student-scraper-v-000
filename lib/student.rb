@@ -11,8 +11,9 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-      new_student = Student.new{student}
       binding.pry
+      new_student = Student.new{student}
+
       @@all << new_student
     end
   end
