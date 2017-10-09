@@ -18,7 +18,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
-    scraped_profile = {:blog => doc.css(".social-icon-container a")['href'],
+    scraped_profile = {
         :profile_quote => doc.css(".profile-quote").text,
         :bio => doc.css(".bio-block p").text}
     doc.css(".social-icon-container a").each do |link|
